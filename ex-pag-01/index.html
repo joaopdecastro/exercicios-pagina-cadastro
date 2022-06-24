@@ -6,45 +6,57 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home Page</title>
     <link rel="stylesheet" href="style.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+    </style>
 </head>
 <body>
     <div class="container">
         <div class="box">
             <div class="left">
-                <div></div>
-                <div></div>
+                <div class="boximage">
+                    <img src="media/image_380x256.png" alt="ilustração genérica" class="image">
+                </div>
+                <div class="boxtext">
+                    <h2>Esta é uma frase <br> quebrada em duas.</h2>
+                </div>
             </div>
             <div class="right">
-                <h1>Olá, seja bem vindo.</h1>
-                <h3>Já possui conta? <a href="#">entrar</a></h3>
-                <a href=""><button><img src="" alt="">Entrar com conta Google</button></a>
-                <a href=""><button><img src="" alt="">Entrar com Facebook</button></a>
-                <fieldset>
-                    <legend>ou</legend>
-                    <form action="cadastro.html" method="GET">
-                        <label>
-                            Conta de Email: <br>
-                            <input type="email" name="email" placeholder="email@email.com" />
-                        </label>
-                        <br>
-                        <label>
-                            Senha: <br>
-                            <input type="password" name="password" placeholder="****"/>
-                        </label>
-                        <br>
-                        <label>
-                            <input type="checkbox" name="terms">
-                            Li e aceitos os <a href="">Termos de Serviço</a> e a <a href="">Política de Privacidade</a>
-                        </label>
-                        <br>
-                        <label>
-                            <input type="submit" name="submit" value="Registrar">
-                        </label>
-                    </form>
-                </fieldset>
+                <div class="formbox">
+                    <h1>Olá, seja bem vindo.</h1>
+                    <h3>Já possui conta? <a href="#">entrar</a></h3>
+                        <div class="grid">
+                            <div class="but1"><button class="butgoogle"><img src="media/google_50x50.png" alt="logotipo do Google">Entrar com Google</button></div>
+                            <div class="but2"><button class="butfacebook"><img src="media/facebook_50x50.png" alt="logotipo do Facebook">Entrar com Facebook</button></div>
+                        </div>
+                    <fieldset>
+                        <legend>ou</legend>
+                        <form action="#" method="GET">
+                            <label>
+                                Conta de Email <br>
+                                <input type="email" name="email" placeholder="email@email.com" class="pre" />
+                            </label>
+                            <br>
+                            <label>
+                                Senha <br>
+                                <input type="password" name="password" class="pre"/>
+                            </label>
+                            <br>
+                            <label class="check">
+                                <input type="checkbox" name="terms">
+                                Li e aceitos os <a href="">Termos de Serviço</a> e a <a href="">Política de Privacidade</a>
+                            </label>
+                            <br>
+                            <label>
+                                <input type="submit" name="submit" value="Registrar" class="submit">
+                            </label>
+                            <p>desenvolvido por <a href="https://www.linkedin.com/in/joaopdecastro/" target="_blank">João Castro</a>.</p>
+                        </form>
+                    </fieldset>
+                </div>
             </div>
         </div>
-        
     </div>
+
 </body>
 </html>
